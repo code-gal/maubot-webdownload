@@ -1,0 +1,11 @@
+# Who is allowed to use the bot? Parsed as an regular expression
+whitelist:
+  - ".*"
+# The prefix for the main command without the !
+command_prefix: urldownload
+# Treat strings that match the following regex as URLs
+url_regex: https?:\/\/(?!.*\.rss)(?!.*\/@[\w-]+:[\w.-]+)[^\s"<>]+
+# Allow downloading of files that match the following mimetypes:
+mimetype_regex: ^(video|audio|application(?!/rss)(?!/xsl)(?!/atom)(?!/json)(?!/xml)|image)
+# Or that match the following extensions:
+extension_regex: ^\.(?!rss)(?!xsl)(?!atom)(?!json)(?!xml)(mp4|mov|avi|webm|jpg|jpeg|png|pdf|txt|csv|json|ya?ml|gif|m4v|ogg|ogv|mp3|aac|mkv|aif|opus)
